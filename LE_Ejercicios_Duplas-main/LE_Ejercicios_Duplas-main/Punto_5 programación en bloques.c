@@ -6,7 +6,7 @@ float calModulo (float, float, float);
 
 int main()
 {
-    float x, y, z, modulo;
+    float x, y, z;
 
     printf("Bienvenido al calculador del modulo de un vector\n");
     printf("Escriba sus valores en orden x, y, z\n");
@@ -15,8 +15,6 @@ int main()
     scanf("%f", &y);
     __fpurge(stdin);
     scanf("%f", &z);
-    //El modulo se calcula como Sqrt(x.x + y.y + z.z)
-    //Tengo que crear una funcion para calcular el modulo
     printf("El modulo de su vector es = %f", calModulo(x,y,z) );
     return 0;
 }
